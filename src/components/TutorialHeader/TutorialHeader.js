@@ -33,13 +33,17 @@ const TutorialHeader = () => (
           isActive={isSideNavExpanded}
         />
         <HeaderName element={Link} to="/" prefix="">
-          K-TRACK: 빅데이터·AI 대미통상 전략대응 플랫폼
+          K-TRACK: 대미통상 전략대응 AI 지능화 플랫폼
         </HeaderName>
         <HeaderNavigation aria-label="Carbon Tutorial">
           <HeaderMenuItem element={Link} to="/repos">
-            Repositories
+            bread_crum_1
+          </HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/repos">
+            bread_crum_2
           </HeaderMenuItem>
         </HeaderNavigation>
+        {/* SideNav appears when collapsed widthly */}
         <SideNav
           aria-label="Side navigation"
           expanded={isSideNavExpanded}
